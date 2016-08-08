@@ -2,13 +2,13 @@
 #include <list>
 
 #pragma once
-class Game
+class Engine
 {
 	std::list<Entity> entities;
 	void Tick();
 public:
 	bool Running;
-	Game();
+	Engine();
 	void Run();
 	void RegisterEntity(Entity entity);
 };

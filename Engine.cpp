@@ -1,10 +1,10 @@
-#include "Game.h"
+#include "Engine.h"
 #include <iostream>
 
-Game::Game() {
+Engine::Engine() {
 }
 
-void Game::Run()
+void Engine::Run()
 {
 	while (Running)
 	{
@@ -12,7 +12,7 @@ void Game::Run()
 	}
 }
 
-void Game::Tick()
+void Engine::Tick()
 {
 	for (std::list<Entity>::iterator it = entities.begin(); it != entities.end(); it++)
 	{
