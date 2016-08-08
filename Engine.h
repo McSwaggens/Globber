@@ -1,5 +1,7 @@
 #include "Entity.h"
 #include <list>
+#include <iostream>
+#include <cstdio>
 
 #pragma once
 class Engine

@@ -1,15 +1,17 @@
 #include "Engine.h"
-#include <iostream>
 
 Engine::Engine() {
 }
 
 void Engine::Run()
 {
+	Running = true;
 	while (Running)
 	{
 		Tick();
 	}
+	
+	printf ("Goodbye");
 }
 
 void Engine::Tick()
