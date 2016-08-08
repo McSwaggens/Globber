@@ -4,6 +4,6 @@ class Entity
 {
 public:
 	Entity();
-	void Tick(double deltaTime);
+	void Tick(float deltaTime);
 };
 

@@ -22,8 +22,8 @@ void Engine::Tick()
 	clock->restart();
 	for (std::list<Entity>::iterator it = entities.begin(); it != entities.end(); it++)
 	{
-		double delta = clock->getElapsedTime().asSeconds();
-		it->Tick((float)delta);
+		float delta = clock->getElapsedTime().asSeconds();
+		it->Tick(delta);
 		std::cout << delta << std::endl;
 	}
 }
