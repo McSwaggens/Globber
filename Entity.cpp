@@ -6,6 +6,6 @@ Entity::Entity(){
 
 }
 
-void Entity::Tick(float DeltaTime) {
+void Entity::Tick() {
 
 }
