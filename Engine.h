@@ -9,6 +9,7 @@ class Engine
 {
 	std::list<Entity> entities;
 	void Tick();
+	sf::Clock* clock;
 public:
 	sf::RenderWindow Screen;
 	bool Running;

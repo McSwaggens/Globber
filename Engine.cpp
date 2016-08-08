@@ -21,7 +21,7 @@ void Engine::Tick()
 {
 	for (std::list<Entity>::iterator it = entities.begin(); it != entities.end(); it++)
 	{
-		double delta = clock.restart().asSeconds();
+		double delta = clock->restart().asSeconds();
 		it->Tick((float)delta);
 	}
 }

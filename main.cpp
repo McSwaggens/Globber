@@ -3,7 +3,7 @@
 
 int main ()
 {
-	std::printf ("Starting game...");
-	Engine engine;
-	engine.Run();
+		std::printf("Starting game...");
+		Engine engine;
+		engine.Run();
 }
