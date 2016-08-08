@@ -19,9 +19,11 @@ void Engine::Run()
 
 void Engine::Tick()
 {
+	clock->restart();
 	for (std::list<Entity>::iterator it = entities.begin(); it != entities.end(); it++)
 	{
-		double delta = clock->restart().asSeconds();
+		double delta = clock->getElapsedTime().asSeconds();
 		it->Tick((float)delta);
+		std::cout << delta << std::endl;
 	}
 }
