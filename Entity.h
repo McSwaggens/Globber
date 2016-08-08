@@ -3,8 +3,7 @@
 class Entity
 {
 public:
-	sf::Clock clock;
 	Entity();
-	void Tick();
+	void Tick(double deltaTime);
 };
 
